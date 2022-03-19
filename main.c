@@ -12,7 +12,7 @@ int main(void)
     }
     int(*SetHook)(void) = (void*)GetProcAddress(hDll, "SetHook");
     void(*HookStop)(void) = (void*)GetProcAddress(hDll, "HookStop");
-	int wrongcode= SetHook();
+    int wrongcode= SetHook();
     switch(wrongcode)
     {
         case 1:
